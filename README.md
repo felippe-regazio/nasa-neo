@@ -24,7 +24,7 @@ npm test
 ```
 
 ```bash
-#Builds the app for production to the `build` folder.\
+# Builds the app for production to the `build` folder.\
 npm run build
 ```
 
