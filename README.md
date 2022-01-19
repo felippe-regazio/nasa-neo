@@ -36,5 +36,5 @@ Since it is a simple project, all the environment variables for all modes are in
 
 For the application base style the "Plume CSS-Only Microframework" was used.  
 
-Plume's page: https://felippe-regazio.github.io/plume-css/
+Plume's page: https://felippe-regazio.github.io/plume-css/  
 Plume's docs and sources: https://github.com/felippe-regazio/plume-css
