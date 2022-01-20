@@ -2,7 +2,7 @@
 
 This project aims to show Neo (Near Earth Object) from the Official Nasa API.
 
-# Client Stack
+## Client Stack
 
 - Created with CRA
 - TS + Router Added
@@ -24,7 +24,7 @@ npm test
 ```
 
 ```bash
-#Builds the app for production to the `build` folder.\
+# Builds the app for production to the `build` folder.\
 npm run build
 ```
 
@@ -36,5 +36,5 @@ Since it is a simple project, all the environment variables for all modes are in
 
 For the application base style the "Plume CSS-Only Microframework" was used.  
 
-Plume's page: https://felippe-regazio.github.io/plume-css/
+Plume's page: https://felippe-regazio.github.io/plume-css/  
 Plume's docs and sources: https://github.com/felippe-regazio/plume-css
