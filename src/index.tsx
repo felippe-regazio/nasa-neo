@@ -1,11 +1,11 @@
 import 'plume-css'
+import App from './App'
 import React from 'react';
-import ReactDOM from 'react-dom';
-import AppRoutes from './routes'
+import { render } from 'react-dom';
 
-ReactDOM.render(
+render(
   <React.StrictMode>
-    <AppRoutes />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
