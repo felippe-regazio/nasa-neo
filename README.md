@@ -21,7 +21,7 @@ npm run start
 
 ```bash
 # Launches the test runner in the interactive watch mode
-npm test
+npm run test
 ```
 
 ```bash
