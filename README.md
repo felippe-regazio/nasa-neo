@@ -11,6 +11,7 @@ This project aims to show Neo (Near Earth Object) from the Official Nasa API.
 
 ## Getting started
 
+Clone this repository, then run `npm install` on the project folder to install the dependencies.  
 In the project directory, you can run:
 
 ```bash
@@ -20,7 +21,7 @@ npm run start
 
 ```bash
 # Launches the test runner in the interactive watch mode
-npm test
+npm run test
 ```
 
 ```bash
