@@ -4,13 +4,14 @@ import { getNeoWsFeed } from './request/nasa';
 import { NeoWsContext, NeoWsContextDefaults } from './neoWsContext';
 
 export default function App(): JSX.Element {
-  const defaultPollingTimeout = 10000;
+  const neoPollingInterval = 1000 * 60;
   const [ neoData, setNeoData ] = useState({ ...NeoWsContextDefaults });
   
-  const setNeoDataError = (has: boolean = true) => setNeoData({
+  const setNeoDataError = (flag: boolean = true) => setNeoData({
     ...neoData, 
-    error: has, 
-    notFetched: false
+    error: flag,
+    notFetched: false,
+    updatedAt: new Date(),
   });
 
   const updateNeoData = () => {
@@ -18,19 +19,21 @@ export default function App(): JSX.Element {
       .then(data => {
         if (data.error) {
           console.error(data);
+          setNeoDataError();
 
-          return setNeoDataError();
+          return false;
         }
 
-        setTimeout(() => {
-          setNeoData({
-            data,
-            error: false,
-            notFetched: false
-          });
-          
-          updateNeoData();
-        }, defaultPollingTimeout);
+        setNeoData({
+          ...neoData,
+
+          data,
+          error: false,
+          notFetched: false,
+          updatedAt: new Date()
+        });
+
+        setTimeout(() => updateNeoData(), neoPollingInterval);
       })
       .catch(error => {
         console.error(error);
