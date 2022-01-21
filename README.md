@@ -11,9 +11,12 @@ This project aims to show Neo (Near Earth Object) from the Official Nasa API.
 
 ## Setup
 
+If you dont have a Nasa's API key, you must please create one. Now:
+
 - Clone this repository
 - Run `npm install` on the project folder  
 - Copy the `.env.example` > `.env` file
+- Set up your Nasa's API key on the `.env` file
 
 You are ready to go.
 

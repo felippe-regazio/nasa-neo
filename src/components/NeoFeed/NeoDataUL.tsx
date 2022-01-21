@@ -18,7 +18,7 @@ const NeoList = styled.ul`
   }
 `
 
-export default function NeoDataUL({ label, list }: NeoDataListProps) {
+export default function NeoDataUL({ label, list }: NeoDataListProps): JSX.Element {
   const clickItem = (item: any) => {
     alert(`Item Name: ${item.name}`);
   };
@@ -55,10 +55,6 @@ export default function NeoDataUL({ label, list }: NeoDataListProps) {
 
                   <p>
                     <strong>Is sentry object:</strong> {item.is_sentry_object ? 'Yes' : 'No'}
-                  </p>
-
-                  <p>
-                    <strong>Neo reference ID:</strong> {item.neo_reference_id}
                   </p>
                 </NeoCard>
               </div>

@@ -4,7 +4,7 @@ type NeoDatasetProps = {
   neoList: any
 }
 
-export default function NeoDataset({ neoList }: NeoDatasetProps) {  
+export default function NeoDataset({ neoList }: NeoDatasetProps): JSX.Element {  
   return (
     <>
       {
