@@ -9,9 +9,16 @@ This project aims to show Neo (Near Earth Object) from the Official Nasa API.
 - Plume CSS for Base Styles
 - Styled Components for Custom Style
 
+## Setup
+
+- Clone this repository
+- Run `npm install` on the project folder  
+- Copy the `.env.example` > `.env` file
+
+You are ready to go.
+
 ## Getting started
 
-Clone this repository, then run `npm install` on the project folder to install the dependencies.  
 In the project directory, you can run:
 
 ```bash
@@ -28,10 +35,6 @@ npm run test
 # Builds the app for production to the `build` folder.\
 npm run build
 ```
-
-## Env
-
-Since it is a simple project, all the environment variables for all modes are in a single .env file on the project root
 
 ## Why Context
 
