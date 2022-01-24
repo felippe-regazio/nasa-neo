@@ -39,6 +39,23 @@ npm run test
 npm run build
 ```
 
+## Test Examples
+
+The app wasnt completely tested, wanst added complex tests as would be need a big mock setup for routing and context,  
+since this is a text and not a real app, just a few ones was added to demonstrate some knowledge.  
+Test examples can be found on:
+
+- /src/components/NasaNeoWsProvider/component.text.tsx
+- /src/components/NeoDataError/component.text.tsx
+- /src/request/request.test.tsx
+- src/App.test.tsx
+
+Tests can be running by npm scripts:
+
+```
+npm run test
+```
+
 ## Why Context
 
 I decided to use Context API do set the Neo Objects collected from API because:
@@ -50,6 +67,8 @@ I decided to use Context API do set the Neo Objects collected from API because:
 ## Base Styles
 
 For the application base style the "Plume CSS-Only Microframework" was used.  
+The microframework was created by me and can be found at the links below.  
+For specific styles or layouting "styled components" were used.  
 
 Plume's page: https://felippe-regazio.github.io/plume-css/  
 Plume's docs and sources: https://github.com/felippe-regazio/plume-css

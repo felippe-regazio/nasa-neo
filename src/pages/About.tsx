@@ -1,14 +1,13 @@
 import DefaultLayout from '../layouts/default';
-import NeoFeed from '../components/NeoFeed/';
 
-const Index: React.FC = (): JSX.Element => {
+const About: React.FC = (): JSX.Element => {
   return (
     <DefaultLayout>
       <div className="pm-container">
-        <NeoFeed />
+        <p>About page (for now just to test router)</p>
       </div>
     </DefaultLayout>
   );
 };
 
-export default Index;
+export default About;
