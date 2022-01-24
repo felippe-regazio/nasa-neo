@@ -8,15 +8,17 @@ This project aims to show Neo (Near Earth Object) from the Official Nasa API.
 - TS + Router Added
 - Plume CSS for Base Styles
 - Styled Components for Custom Style
+- Tested with react-testing-library
 
 ## Setup
 
-If you dont have a Nasa's API key, you must please create one. Now:
+If you dont have a Nasa's API key, you must please create one at https://api.nasa.gov/.
 
 - Clone this repository
 - Run `npm install` on the project folder  
 - Copy the `.env.example` > `.env` file
 - Set up your Nasa's API key on the `.env` file
+- Run "npm run start" to start the dev server
 
 You are ready to go.
 
