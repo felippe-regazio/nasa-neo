@@ -8,6 +8,7 @@ This project aims to show Neo (Near Earth Object) from the Official Nasa API.
 - TS + Router Added
 - Plume CSS for Base Styles
 - Styled Components for Custom Style
+- Tested with react-testing-library
 
 ## Setup
 
