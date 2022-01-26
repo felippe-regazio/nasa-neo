@@ -1,3 +1,4 @@
+import DateUtils from '../../utils/date-utils'
 import styled from 'styled-components'
 import NeoCard from './NeoCard'
 
@@ -29,8 +30,10 @@ export default function NeoDataUL({ label, list }: NeoDataListProps): JSX.Elemen
 
       <NeoList>
         {
-          list.map((item: any) => (
-            <li key={item.id}>
+          list.map((item: any) => {
+            const closeApproachDate = DateUtils.getFormatedCloseApproachDate(item.close_approach_data);
+
+            return <li key={item.id}>
               <div onClick={() => clickItem(item)}>
                 <NeoCard>
                   <p className="pm-h4">
@@ -43,6 +46,10 @@ export default function NeoDataUL({ label, list }: NeoDataListProps): JSX.Elemen
 
                   <p>
                     <strong>Name:</strong> {item.name}
+                  </p>
+
+                  <p>
+                    <strong style={{color: 'green', fontWeight: 'bold'}}>Closed Approach Date</strong> {closeApproachDate}
                   </p>
 
                   <p>
@@ -59,7 +66,7 @@ export default function NeoDataUL({ label, list }: NeoDataListProps): JSX.Elemen
                 </NeoCard>
               </div>
             </li>
-          ))
+          })
         }
       </NeoList>
     </>
